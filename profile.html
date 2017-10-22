@@ -1,0 +1,379 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title></title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="./css/profile.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+
+<style type="text/css">
+  body, h1,h2,h3,h4,h5,h6,p {font-family: 'Asap Condensed', sans-serif}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+  .rightalign2{
+    position: absolute;
+    right: 14px;
+    top: 250px;
+  }
+  .rightalign3{
+    position: absolute;
+    right: 14px;
+    top: 300px;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="col s12 m4">
+    <ul id="slide-out" class="side-nav fixed">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="https://static.pexels.com/photos/517884/pexels-photo-517884.jpeg">
+        </div>
+        <a href="#!user"><img class="circle" src="https://static.pexels.com/photos/324658/pexels-photo-324658.jpeg"></a>
+        <a href="#!name"><span class="white-text name">John Doe</span></a>
+        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">ID: 563839477PG</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect" href="index.html"><i class="fa fa-home" style="font-size: 30px"></i><b>HOME</b></a></li>
+      <li style="background-color: lightgrey"><a class="waves-effect" href="#!"><i class="fa fa-cutlery" style="font-size: 30px"></i><b>MY RECIPE</b></a></li>
+      <li><a class="waves-effect" href="#!"><i class="fa fa-heart" style="font-size: 30px"></i><b>FAVORITES</b></a></li>
+      <li><a class="waves-effect" href="#!"><i class="material-icons" style="font-size: 35px">person</i><b>PROFILE</b></a></li>
+      <li><a class="waves-effect" href="#!"><i class="fa fa-envelope" style="font-size: 30px"></i><b>Contact</b></a></li><br>
+      <p class="center">
+        <span class="fa-stack fa-lg center">
+          <i class="fa fa-circle fa-stack-2x" style="color: blue"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse text-white"></i>
+        </span>
+        <span class="fa-stack fa-lg center">
+          <i class="fa fa-circle fa-stack-2x" style="color: #212F3C"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse text-white"></i>
+        </span>
+        <span class="fa-stack fa-lg center">
+          <i class="fa fa-circle fa-stack-2x" style="color: red"></i>
+          <i class="fa fa-google fa-stack-1x fa-inverse text-white"></i>
+        </span>
+        <span class="fa-stack fa-lg center">
+          <i class="fa fa-circle fa-stack-2x" style="color: orange"></i>
+          <i class="fa fa-instagram fa-stack-1x fa-inverse text-white"></i>
+        </span>
+      </p>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+  <div class="col s12 m8">
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating green modal-trigger waves-effect" href="#modal1"><i class="material-icons">add</i></a></li>
+      <li><a class="btn-floating blue modal-trigger waves-effect" href="#modal1"><i class="material-icons">edit</i></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Add Recipe</h4>
+        <form class="col s12 m12 ">
+          <div class="input-field col s12">
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Title</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Category</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Description</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Ingredients</label>
+          </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">
+          <button class="btn center waves-effect waves-light grey black-text" 
+            type="submit" name="action">
+            <i class="fa fa-paper-plane"></i> SUBMIT
+          </button>
+        </a>
+    </div>
+  </div>
+
+
+    <div class="row no-gutters">
+      <h4 class="text-light-grey"> My Recipes</h4>
+      <div class="col m6 s12">
+        <div class="card" >
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://static.pexels.com/photos/407293/pexels-photo-407293.jpeg" style="height: 350px">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">American Sandwich<i class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+          </div>
+          <div class="card-reveal">
+            <small class="">posted on 12/05/17<span class="right"><i class="fa fa-heart red-text"></i>  5 <span style="margin-right: 4px;margin-left: 4px"> | <i class="fa fa-thumbs-up"></i> 14</span>
+                <section class="rightalign2">
+                  <span class="fa-stack fa-lg ">
+                    <i class="fa fa-circle fa-stack-2x green-text"></i>
+                    <i class="fa fa-edit fa-stack-1x fa-inverse text-white"></i>
+                  </span>
+                </section></span>
+                <section class="rightalign3">
+                  <span class="fa-stack fa-lg center">
+                    <i class="fa fa-circle fa-stack-2x red-text"></i>
+                    <i class="fa fa-trash-o fa-stack-1x fa-inverse text-white"></i>
+                  </span>
+                </section>
+            </small>
+            <span class="card-title grey-text text-darken-4">American Sandwich<i class="material-icons right"></i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://static.pexels.com/photos/76093/pexels-photo-76093.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Jellof Rice<i class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+          </div>
+          <div class="card-reveal">
+            <small class="">posted on 12/05/17<span class="right"><i class="fa fa-heart red-text"></i>  5 <span style="margin-right: 4px;margin-left: 4px"> | <i class="fa fa-thumbs-up"></i> 14</span></span>
+                <section class="rightalign2">
+                  <span class="fa-stack fa-lg ">
+                    <i class="fa fa-circle fa-stack-2x green-text"></i>
+                    <i class="fa fa-edit fa-stack-1x fa-inverse text-white"></i>
+                  </span>
+                </section></span>
+                <section class="rightalign3">
+                  <span class="fa-stack fa-lg center">
+                    <i class="fa fa-circle fa-stack-2x red-text"></i>
+                    <i class="fa fa-trash-o fa-stack-1x fa-inverse text-white"></i>
+                  </span>
+                </section></small>
+            <span class="card-title grey-text text-darken-4">Jellof Rice</span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div><br><br><br><br>
+
+  <div class="text-grey">
+    <h3 class="text-light-grey" >About Me</h3>
+    <!-- <hr style="width:200px" class="opacity"> -->
+    <p style="line-height: 24px">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p><br>
+    <h4 class="padding-16 text-light-grey">My Skills</h4>
+    <p class="wide">Continental Dishes</p>
+  <div class="progress">
+      <div class="determinate" style="width: 70%"></div>
+  </div>
+    <p class="wide">African Dishes</p>
+      <div class="progress">
+          <div class="determinate" style="width: 45%"></div>
+      </div>
+    <p class="wide">Chinnese Dishes</p>
+      <div class="progress">
+          <div class="determinate" style="width: 85%"></div>
+      </div><br>
+    
+    <div class="row center " style="padding: 35px 10px;font-size: 16px;background-color: #D0D3D4">
+      <div class="col s3 m3">
+        <span class="" style="font-size: 25px">11+</span><br>
+        Favorites
+      </div>
+      <div class="col s3 m3">
+        <span class="" style="font-size: 25px">55+</span><br>
+        Projects Done
+      </div>
+      <div class="col s3 m3">
+        <span class="" style="font-size: 25px">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="col s3 m3">
+        <span class="" style="font-size: 25px">150+</span><br>
+        Followers
+      </div>
+    </div>
+
+            <button class="btn center waves-effect waves-light white-text" 
+                  type="submit" name="action" style="background: #566573">
+                  <!-- <i class="fa fa-paper-plane"></i> --> FOLLOW +
+          </button><br><br>
+        
+    <!-- Testimonials -->
+    <h4 class="text-light-grey">Referees</h4> 
+    <hr style="width:100px" class="left"><br>
+    <div class="col s6 m4"> 
+    <img src="https://static.pexels.com/photos/91227/pexels-photo-91227.jpeg" class="left circle margin-right" style="width:60px;height: 60px;border-radius: 100%"><br>
+    <p><span class="large margin-right">Chris Fox.</span> <br><b>CEO at Mighty Schools.</b></p>
+    <p>John Doe saved us from a web disaster.</p><br>
+    </div>
+    <div class="col s6 m4"> 
+    <img src="https://static.pexels.com/photos/91227/pexels-photo-91227.jpeg" alt="Avatar" class="left circle margin-right" style="width:60px;height: 60px;border-radius: 100%"><br>
+    <p><span class="large margin-right">Rebecca Flex.</span><br> <b>CEO at Google Inc.</b></p>
+    <p>No one is better than John Doe.</p>
+  </div><br><br><br><br><br><br><br><br><br><br>
+  <!-- End About Section -->
+ <!--            <button class="btn right center waves-effect waves-light white-text" 
+                  type="submit" name="action" style="background: #566573;margin-right: 55px">
+                  <i class="fa fa-paper-plane"></i> EDIT +
+          </button> -->
+  </div>
+
+      <div class="" id="contact">
+
+      <h4 class="text-light-grey">Contact Me</h4>
+      <!-- <hr style="width:200px" class="opacity"> -->
+
+      <div class="">
+        <p><i class="fa fa-map-marker fa-fw grey-text fa-2x"></i> Chicago, US</p>
+        <p><i class="fa fa-phone fa-fw grey-text fa-2x"></i> Phone: +00 151515</p>
+        <p><i class="fa fa-envelope fa-fw grey-text fa-2x  blue-grey-text"> </i> Email: mail@mail.com</p>
+      </div><br>
+      <p>Lets get in touch. Send me a message:</p>
+
+          <form class="col s12 m12 ">
+                <div class="input-field col s12">
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">First Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+                </div>
+
+                  <button class="btn center waves-effect waves-light grey black-text" 
+                  type="submit" name="action">
+                  <i class="fa fa-paper-plane"></i> SUBMIT
+          </button>
+        </form>
+    </div>
+  </div>  
+</div>   
+<!-- 
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="white-text">ABOUT</h6>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis egestas ante non maximus. Maecenas commodo lectus ligula, nec ultricies quam laoreet porta. Donec lectus nisl, porttitor ac semper molestie, sagittis non orci. In egestas diam tincidunt fringilla posuere</p>
+
+
+        </div>
+        <div class="col l3 s6 center">
+          <h6 class="white-text">SETTINGS</h6>
+          <ul>
+            <li><a class="white-text" href="#!">FAQ</a></li>
+            <li><a class="white-text" href="#!">Pricing</a></li>
+            <li><a class="white-text" href="#!">Notifications</a></li>
+            <li><a class="white-text" href="#!">Restaurants</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s6 center">
+          <h6 class="white-text">CONNECT</h6>
+          <ul>
+            <li><a class="white-text" href="#!">facebook</a></li>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+    <a class="brown-text text-lighten-3" href="http://materializecss.com"></a>
+      </div>
+    </div>
+  </footer> -->
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+  </script>
+
+  </body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
