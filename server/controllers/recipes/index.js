@@ -1,5 +1,4 @@
 // import createRecipe from './addRecipe';
-// import updateRecipe from './updateRecipe';
 // import deleteRecipe from './deleteRecipe';
 // import favoriteRecipe from './favoriteRecipe';
 // import reviewRecipe from './reviewRecipe';
@@ -7,10 +6,12 @@
 import allRecipe from './allRecipe';
 import addRecipe from './addRecipe';
 import deleteRecipe from './deleteRecipe';
+import updateRecipe from './updateRecipe';
 
 const recipesController = {
   allRecipe,
   addRecipe,
+  updateRecipe,
   deleteRecipe
 };
 
