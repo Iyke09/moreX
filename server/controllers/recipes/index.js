@@ -6,10 +6,12 @@
 // import sortRecipe from './sortRecipe';
 import allRecipe from './allRecipe';
 import addRecipe from './addRecipe';
+import deleteRecipe from './deleteRecipe';
 
 const recipesController = {
   allRecipe,
-  addRecipe
+  addRecipe,
+  deleteRecipe
 };
 
 export default recipesController;
