@@ -5,9 +5,11 @@
 // import reviewRecipe from './reviewRecipe';
 // import sortRecipe from './sortRecipe';
 import allRecipe from './allRecipe';
+import addRecipe from './addRecipe';
 
 const recipesController = {
-  allRecipe
+  allRecipe,
+  addRecipe
 };
 
 export default recipesController;
