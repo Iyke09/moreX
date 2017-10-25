@@ -7,10 +7,14 @@ import allRecipe from './allRecipe';
 import addRecipe from './addRecipe';
 import deleteRecipe from './deleteRecipe';
 import updateRecipe from './updateRecipe';
+import upvoteRecipe from './upvoteRecipe';
 import addReview from './addReview';
+import recipeSort from './recipeSort';
 
 const recipesController = {
   allRecipe,
+  upvoteRecipe,
+  recipeSort,
   addReview,
   addRecipe,
   updateRecipe,
