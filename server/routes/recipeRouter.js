@@ -15,5 +15,7 @@ router.put('/:id/review', recipeController.addReview);
 
 router.put('/:id/upvote', recipeController.upvoteRecipe);
 
+router.put('/:id/downvote', recipeController.downvoteRecipe);
+
 
 module.exports = router;
