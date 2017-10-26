@@ -2,10 +2,10 @@
 [![Build Status](https://travis-ci.org/Iyke09/moreX.svg?branch=integrationSetup)](https://travis-ci.org/Iyke09/moreX)
 [![Coverage Status](https://coveralls.io/repos/github/Iyke09/moreX/badge.svg?branch=integrationSetup)](https://coveralls.io/github/Iyke09/moreX?branch=integrationSetup)
 
-##More Recipes
+## More Recipes
 The more recipes app is simply a simple that enables users share their recipes with other fellow users and be able to get reviews and likes for their recipes.
 
-###To Run:
+### To Run:
 
 - clone this repo by typing
 ```
@@ -18,7 +18,7 @@ The more recipes app is simply a simple that enables users share their recipes w
 ```
 - then check it out in browser at localhost:8000
 
-###Available routes
+### Available routes
 
 - **GET** http://localhost:8000/api/v1/recipes - to get all available recipes
 
