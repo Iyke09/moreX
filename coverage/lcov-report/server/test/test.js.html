@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for server/test/test.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">server/test</a> test.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>105/105</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>42/42</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>105/105</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { expect } from 'chai';
+import supertest from 'supertest';
+import app from '../app';
+&nbsp;
+const request = supertest(app);
+const rootURL = '/api/v1';
+const recipesUrl = `${rootURL}/recipes`;
+// const usersUrl = `${rootURL}/users`;
+&nbsp;
+let data = {};
+// only used to test actions that requires a logged in user
+&nbsp;
+let recipeId;
+&nbsp;
+&nbsp;
+describe('API Integration Tests', () =&gt; {
+  describe('Add Recipe', () =&gt; {
+    beforeEach(() =&gt; {
+      data = {
+        title: 'Fried Rice',
+        description: `Nigerian Fried Rice puts a spicy, flavorful spin on the traditional
+             fried rice and is appealing on its own or served with a variety of other African food.`,
+        category: 'dessert',
+      };
+    });
+&nbsp;
+    // test if name is passed when creating a recipe
+    it('return 400 if recipe name is not passed', (done) =&gt; {
+      const noName = Object.assign({}, data);
+      noName.title = undefined;
+      request.post(recipesUrl)
+        .send(noName)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(400);
+          expect(res.body.message).to.equal('please fill in the details');
+          done();
+        });
+    });
+&nbsp;
+    it('return 201 if recipe is created', (done) =&gt; {
+      const datas = Object.assign({}, data);
+      data.title = 'the first recipe';
+      request.post(recipesUrl)
+        .send(datas)
+        .end((err, res) =&gt; {
+          recipeId = res.body.recipe.id;
+          expect(res.status).to.equal(201);
+          expect(res.body.message).to.equal('recipe created');
+          done();
+        });
+    });
+  });
+&nbsp;
+  describe('Review Recipes', () =&gt; {
+    it('return 201 if add review successful', (done) =&gt; {
+      request.post(`${recipesUrl}/${recipeId}/review`)
+      .send({ name: 'jane', content: 'elo bae' })
+        .end((err, res) =&gt; {
+          console.log(err);
+          expect(res.status).to.equal(201);
+          expect(res.body.message).to.equal('review sent');
+          done();
+        });
+    });
+&nbsp;
+    it('return 404 if recipe is not found', (done) =&gt; {
+      request.post(`${recipesUrl}/15/review`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(404);
+          expect(res.body.message).to.equal('not found');
+          done();
+        });
+    });
+  });
+&nbsp;
+  describe('Upvote Recipes', () =&gt; {
+    it('return 201 if upvote successful', (done) =&gt; {
+      request.put(`${recipesUrl}/${recipeId}/upvote`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(200);
+          expect(res.body.message).to.equal('recipe upvoted');
+          expect(res.body.recipe.upvote).to.equal(1);
+          done();
+        });
+    });
+&nbsp;
+    it('return 404 if recipe is not found', (done) =&gt; {
+      request.put(`${recipesUrl}/15/upvote`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(404);
+          expect(res.body.message).to.equal('not found');
+          done();
+        });
+    });
+  });
+&nbsp;
+  describe('Downvote Recipes', () =&gt; {
+    it('return 201 if upvote successful', (done) =&gt; {
+      request.put(`${recipesUrl}/${recipeId}/downvote`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(200);
+          expect(res.body.message).to.equal('recipe downvoted');
+          expect(res.body.recipe.downvote).to.equal(1);
+          done();
+        });
+    });
+&nbsp;
+    it('return 404 if recipe is not found', (done) =&gt; {
+      request.put(`${recipesUrl}/15/upvote`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(404);
+          expect(res.body.message).to.equal('not found');
+          done();
+        });
+    });
+  });
+&nbsp;
+  describe('All Recipes', () =&gt; {
+    it('return 200 if get all recipes successful', (done) =&gt; {
+      request.get(`${recipesUrl}`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(200);
+          expect(res.body.message).to.equal('Welcome to More-Recipes');
+          expect(res.body.status).to.equal('Success');
+          done();
+        });
+    });
+&nbsp;
+    it('return the length of recipes array', (done) =&gt; {
+      request.get(`${recipesUrl}`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(200);
+          expect(res.body.recipes.length).to.equal(4);
+          done();
+        });
+    });
+  });
+&nbsp;
+  describe('Sort Recipes', () =&gt; {
+    it('return 200 if recipes is sorted successfully', (done) =&gt; {
+      request.get(`${recipesUrl}?sort=upvote&amp;&amp;order=des`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(200);
+          expect(res.body.message).to.equal('Welcome to More-Recipes');
+          expect(res.body.recipes[0].upvote).to.equal(1);
+          done();
+        });
+    });
+  });
+&nbsp;
+&nbsp;
+  describe('Update Recipes', () =&gt; {
+    it('return 401 if user not logged in', (done) =&gt; {
+      request.put(`${recipesUrl}/2`)
+        .send({ title: 'YOLO' })
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(201);
+          expect(res.body.message).to.equal('recipe updated');
+          done();
+        });
+    });
+&nbsp;
+&nbsp;
+    it('return 404 if recipe is not found', (done) =&gt; {
+      request.put(`${recipesUrl}/15`)
+        .send({ title: 'YOLO' })
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(404);
+          expect(res.body.message).to.equal('not found');
+          done();
+        });
+    });
+  });
+&nbsp;
+&nbsp;
+  describe('Delete Recipes', () =&gt; {
+    it('return 401 if user not owner of recipe', (done) =&gt; {
+      request.delete(`${recipesUrl}/2`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(200);
+          expect(res.body.message).to.equal('recipe deleted');
+          done();
+        });
+    });
+&nbsp;
+    it('return 401 if user not owner of recipe', (done) =&gt; {
+      request.delete(`${recipesUrl}/1`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(200);
+          expect(res.body.message).to.equal('recipe deleted');
+          done();
+        });
+    });
+&nbsp;
+    it('return 404 if recipe is not found', (done) =&gt; {
+      request.delete(`${recipesUrl}/15`)
+        .end((err, res) =&gt; {
+          expect(res.status).to.equal(404);
+          expect(res.body.message).to.equal('not found');
+          done();
+        });
+    });
+  });
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 26 2017 21:45:51 GMT+0100 (W. Central Africa Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

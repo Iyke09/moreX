@@ -12,7 +12,10 @@ const addRecipe = (req, res) => {
     title: req.body.title,
     caption: req.body.category
   };
-  res.send(recipes.addRecipe(recipeObj));
+  res.status(201).send({
+    message: 'recipe created',
+    recipe: recipes.addRecipe(recipeObj)
+  });
 };
 
 export default addRecipe;

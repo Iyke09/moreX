@@ -1,11 +1,14 @@
-import recipes from '../../data/recipes';
+// import recipes from '../../data/recipes';
 
-const sortRecipe = (req, res) => {
-  try {
-    res.send(recipes.sort(req.query.sort, req.query.order));
-  } catch (err) {
-    res.send(err.message);
-  }
-};
+// const sortRecipe = (req, res) => {
+//   try {
+//     res.status(200).send({
+//       message: 'recipe sorted',
+//       recipe: recipes.sort(req.query.sort, req.query.order)
+//     });
+//   } catch (err) {
+//     res.status(404).send({ message: err.message });
+//   }
+// };
 
-export default sortRecipe;
+// export default sortRecipe;
