@@ -11,6 +11,9 @@ class Recipe {
   constructor(recipe, id) {
     this.id = id;
     this.title = recipe.title;
+    this.category = recipe.category;
+    this.description = recipe.description;
+    this.image = recipe.image;
     this.upvote = 0;
     this.downvote = 0;
     this.review = [];

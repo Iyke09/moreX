@@ -10,7 +10,9 @@ const addRecipe = (req, res) => {
   const recipeObj = {
     id: 1,
     title: req.body.title,
-    caption: req.body.category
+    category: req.body.category,
+    description: req.body.description,
+    image: req.body.image
   };
   res.status(201).send({
     message: 'recipe created',
